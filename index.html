@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="sub">
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        </div>
+        <div class="small">
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        </div> 
+    </div>
+    
+</body>
+</html>
+<style>
+    .one{
+        background-color: rgb(5, 179, 5);
+        width: 100%;
+        height: 200px;
+    
+       
+    }
+      .two{
+        background-color: blue;
+      }
+      .three{
+        background-color: blue;
+         
+    }
+      .four{
+        background-color: blue;
+       
+        
+
+    }
+      .five{
+        background-color: black;
+    }
+      .six{
+        background-color: black;
+    }
+      .seven{
+        background-color: black;
+    }
+      .eight{
+        background-color: black;
+    }
+    .sub{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 150px;
+        grid-column-gap: 10px;
+    }
+    @media screen and (max-width:700px){
+        .sub{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+        grid-column-gap: 10px;
+        grid-gap: 10px 10px;
+
+    }
+
+    }
+    .small{
+          display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 150px;
+        grid-column-gap: 10px;
+    }
+    @media screen and (max-width:700px){
+        .small{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 150px;
+        grid-column-gap: 10px;
+        grid-gap: 10px 10px;
+
+    }}
+      @media screen and (max-width:300px){
+        .small{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+        grid-column-gap: 10px;
+        grid-gap: 10px 10px;
+
+    }}
+
+</style>
