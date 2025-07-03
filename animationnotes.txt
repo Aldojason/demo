@@ -1,0 +1,12 @@
+                                                       transition property
+
+
+  transition: 0.5s;
+transition-timing-function: ease-in; - decides the speed effect of the transition
+
+ease-starts slow speed up in middle and end slow
+ease-in - starts slow and speed up
+ease-out
+step- step by step transition
+linear- uniform speed
+cubic-bezier(x,y,z,a)-custom speed allocation like cubic-bezier(.2,.3,.5,.1)
