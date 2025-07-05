@@ -10,3 +10,26 @@ ease-out
 step- step by step transition
 linear- uniform speed
 cubic-bezier(x,y,z,a)-custom speed allocation like cubic-bezier(.2,.3,.5,.1)
+
+<h1>
+</h1>
+<style>
+    h1{
+        background-color: black;
+        width: 200px;
+        height: 100px;
+        transition: all 1s ease-in-out;
+       
+    }
+    h1:hover{
+        background-color: aqua;
+        transform: rotate(140deg)
+        scale(2)
+
+    }
+</style>
+
+translate(200px,100px)-moves the elment horizontally and vertially
+scale(x,y)-enlarge the element vertically and horizontally 
+scale()-enlarge the element in both direction  equally
+rotate-roatate the element clock vise
