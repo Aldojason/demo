@@ -1,6 +1,20 @@
                                                        transition property
 
+extra:
+box-shadow: 5px 5px 10px 0px gray;
+🔍 Breakdown:
+5px → how far the shadow moves right (horizontal)
 
+5px → how far the shadow moves down (vertical)
+
+10px → blur (higher value = softer shadow)
+
+0px → spread (increase or decrease the size of the shadow)
+
+gray → color of the shadow
+
+border: width style color;
+ --------------------------------------------------------------------------------------------------------------------------------
   transition: 0.5s;
 transition-timing-function: ease-in; - decides the speed effect of the transition
 
@@ -33,3 +47,82 @@ translate(200px,100px)-moves the elment horizontally and vertially
 scale(x,y)-enlarge the element vertically and horizontally 
 scale()-enlarge the element in both direction  equally
 rotate-roatate the element clock vise
+------------------------------------------------------------------------------------------------------------------------------------
+animation property;-you must give these 7 function
+  animation-name: name of the animation;
+          animation-timing-function: timing of the animation;
+          animation-timing-function: ease;
+          animation-delay: 0s delay of the animation;
+          animation-iteration-count: number of times the animation repeat give infinite if you want that to work infinite times;
+          animation-direction: example like alternate,alternate-reverse,normal,reverse,;
+          animation-fill-mode: both there are many try it out;
+include the keyframes for the animation
+ @keyframes example{
+        from{
+            transform: translate(0px) rotate(0deg);
+        }
+        to{
+            transform: translate(250px) rotate(140deg);
+        }
+    }
+
+example:
+      <div>
+<h1>
+</h1>
+</div>
+<style>
+    *{
+        justify-items: center;
+        margin-top: 100px;
+    }
+    h1{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        animation: example 2s ease-in-out 0s infinite alternate both;
+    }   
+    @keyframes example{
+        from{
+            transform: translate(0px) rotate(0deg);
+        }
+        to{
+            transform: translate(250px) rotate(140deg);
+        }
+    }
+</style>
+
+loading animation example:
+ <h1>
+</h1>
+<style>
+    *{
+        justify-items: center;
+        margin-top: 100px;
+    }
+    h1{
+        background-color: rgb(219, 7, 7);
+        width: 20px;
+        height: 20px;
+        border: 4px solid rgb(219, 7, 7);
+        box-shadow: 0px 0px 10px rgb(219, 7, 7);
+        animation: ex 2s ease-in-out 0s infinite normal both;
+    }
+    @keyframes ex{
+        0%{
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        30%{
+          transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+        }
+        50%{
+           transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+        }
+        100%{
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        }
+    }
+</style>
+
+scroll animation example:
+          
